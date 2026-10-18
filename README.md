@@ -1,16 +1,130 @@
-# React + Vite
+# Student Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple student management application built using React.js to add, view, edit, and delete student details.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Add new student details.
+* View all student records in a table.
+* Edit existing student information.
+* Delete student records.
+* Validate form fields before submission.
+* Display student details using a simple and responsive interface.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript
+* HTML5
+* CSS3
+* Axios
+* React Router DOM
+* JSON Server
+* Vite
 
-## Expanding the ESLint configuration
+## API Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Used Axios to connect the React application to the backend API.
+* Created a reusable Axios instance with a base URL.
+* Used GET to fetch student details.
+* Used POST to add new students.
+* Used PUT to update student details.
+* Used DELETE to remove student records.
+* Created separate service functions to manage API requests.
+* Used try-catch blocks to handle API errors.
+
+## Student Details
+
+The application manages the following information:
+
+* Student ID
+* Name
+* Email
+* Phone Number
+* Department
+
+## Project Structure
+
+```text
+src/
+├── api/
+│   └── api.js
+├── components/
+│   ├── AddStudent.jsx
+│   ├── DisplayStudent.jsx
+│   └── EditStudent.jsx
+├── services/
+│   └── studentService.js
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+
+db.json
+package.json
+vite.config.js
+```
+
+## Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/abimuthu2424/React-Student-Management.git
+```
+
+### 2. Open the Project Folder
+
+```bash
+cd React-Student-Management
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start JSON Server
+
+```bash
+npx json-server --watch db.json --port 3000
+```
+
+The API will run at `http://localhost:3000`.
+
+### 5. Start the React Application
+
+Open another terminal and run:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal to use the application.
+
+## API Endpoints
+
+| Method | Endpoint        | Purpose                |
+| ------ | --------------- | ---------------------- |
+| GET    | `/students`     | Get all students       |
+| GET    | `/students/:id` | Get a student by ID    |
+| POST   | `/students`     | Add a new student      |
+| PUT    | `/students/:id` | Update student details |
+| DELETE | `/students/:id` | Delete a student       |
+
+## What I Learned
+
+* Building React components using functional components and Hooks.
+* Managing form data using `useState`.
+* Fetching data using `useEffect`.
+* Navigating between pages using React Router.
+* Integrating REST APIs using Axios.
+* Performing CRUD operations.
+* Organizing API requests into separate service functions.
+
+## Author
+
+**Abimuthu P**
+
+GitHub: [abimuthu2424](https://github.com/abimuthu2424)
