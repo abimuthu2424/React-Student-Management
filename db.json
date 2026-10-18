@@ -1,0 +1,29 @@
+{
+  "students": [
+    {
+      "sname": "Abi",
+      "sid": "24",
+      "semail": "abi@gmail.com",
+      "phNo": "9876543324",
+      "dept": "IT",
+      "id": "ucsue5vUvb4"
+    },
+    {
+      "sname": "Laura",
+      "sid": "12",
+      "semail": "laura@gmail.com",
+      "phNo": "7896543210",
+      "dept": "CSE",
+      "id": "oalr012YPE4"
+    },
+    {
+      "sname": "Sara",
+      "sid": "27",
+      "semail": "sara27@gmail.com",
+      "phNo": "6345634588",
+      "dept": "MECH",
+      "id": "D6wbFqXbPFk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
